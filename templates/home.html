@@ -1,0 +1,29 @@
+<html>
+   <body>
+    <h1>WELCOME TO HOUSE PRICE PREDICTION APP</h1>
+      <form action = "http://127.0.0.1:5000/predictHousePrice" method = "POST">
+         <p>CRIM <input type = "text" name = "CRIM" /></p>
+         <p>ZN <input type = "text" name = "ZN" /></p>
+         <p>INDUS <input type = "text" name = "INDUS" /></p>
+         <p>CHAS <input type ="text" name = "CHAS" /></p>
+         <p>NOX <input type ="text" name = "NOX" /></p>
+         <p>RM <input type ="text" name = "RM" /></p>
+         <p>AGE <input type ="text" name = "AGE" /></p>
+         <p>DIS <input type ="text" name = "DIS" /></p>
+         <p>RAD <input type ="text" name = "RAD" /></p>
+         <p>TAX <input type ="text" name = "TAX" /></p>
+         <p>PTRATIO <input type ="text" name = "PTRATIO" /></p>
+         <p>B <input type ="text" name = "B" /></p>
+         <p>LSTAT <input type ="text" name = "LSTAT" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+      <h2>The predicted house price is {{price}}</h2>
+   </body>
+</html>
+
+<!---- 
+    Feature names:
+
+    'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD',
+    'TAX', 'PTRATIO', 'B', 'LSTAT' 
+-->
