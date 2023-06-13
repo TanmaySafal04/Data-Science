@@ -7,7 +7,7 @@ app=Flask(__name__)
 model=pickle.load(open('House_Price.pickle', 'rb'))
 preprocessor=pickle.load(open('scaler_obj.pickle','rb'))
 
-@app.route('/predictHousePrice',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 # Features
 # 'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD','TAX', 'PTRATIO', 'B', 'LSTAT' 
 def predict():
