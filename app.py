@@ -45,4 +45,4 @@ def predict():
         return render_template('error.html', error_message=error_message)
 
 if __name__ == '__main__':
-    app.run(host=0.0.0.0)
+    app.run(host='0.0.0.0')
