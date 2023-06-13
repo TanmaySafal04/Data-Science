@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 app=Flask(__name__)
-model=pickle.load(open('House_Price.pickle', 'rb'))
-preprocessor=pickle.load(open('scaler_obj.pickle','rb'))
+model=pickle.load(open('.\Model\House_Price.pickle', 'rb'))
+preprocessor=pickle.load(open('.\Model\scaler_obj.pickle','rb'))
 
 @app.route('/',methods=['GET','POST'])
 # Features
